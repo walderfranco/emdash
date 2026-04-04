@@ -8,8 +8,8 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsdown",
-    "dev": "tsdown --watch",
+    "build": "node init && tsdown",
+    "dev": "node init && tsdown --watch",
     "typecheck": "tsgo --noEmit"
   },
   "dependencies": {

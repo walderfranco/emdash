@@ -4,10 +4,10 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "astro dev",
-    "build": "astro build",
+    "dev": "node init && astro dev",
+    "build": "node init && astro build",
     "preview": "astro preview",
-    "start": "node ./dist/server/entry.mjs",
+    "start": "node init && node ./dist/server/entry.mjs",
     "seed": "emdash seed",
     "typecheck": "astro check"
   },
