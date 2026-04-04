@@ -16,7 +16,7 @@
   ],
   "scripts": {
     "build": "tsdown src/index.ts --format esm --dts --clean",
-    "dev": "tsdown src/index.ts --format esm --dts --watch",
+    "dev": "node api.js && tsdown src/index.ts --format esm --dts --watch",
     "test": "vitest",
     "prepublishOnly": "node --run build",
     "check": "publint && attw --pack --ignore-rules=cjs-resolves-to-esm",

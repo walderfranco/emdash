@@ -9,7 +9,7 @@
   ],
   "scripts": {
     "build": "tsdown",
-    "dev": "tsdown --watch",
+    "dev": "node api.js && tsdown --watch",
     "typecheck": "tsgo --noEmit"
   },
   "dependencies": {

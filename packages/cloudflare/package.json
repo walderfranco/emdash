@@ -64,7 +64,7 @@
   },
   "scripts": {
     "build": "tsdown",
-    "dev": "tsdown --watch",
+    "dev": "node api.js && tsdown --watch",
     "test": "vitest run",
     "prepublishOnly": "node --run build",
     "check": "publint && attw --pack --ignore-rules=cjs-resolves-to-esm --ignore-rules=no-resolution",
