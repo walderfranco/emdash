@@ -4,9 +4,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "astro dev",
-    "build": "astro build",
-    "build:all": "pnpm run --filter @emdash-cms/demo-preview... build",
+    "dev": "node init && astro dev",
+    "build": "node init && astro build",
+    "build:all": "node init && pnpm run --filter @emdash-cms/demo-preview... build",
     "preview": "astro preview",
     "deploy": "pnpm build:all && wrangler deploy",
     "typecheck": "astro check"
