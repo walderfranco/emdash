@@ -31,8 +31,8 @@
     }
   },
   "scripts": {
-    "build": "tsdown",
-    "dev": "tsdown --watch",
+    "build": "node api.js && tsdown",
+    "dev": "node api.js && tsdown --watch",
     "check": "publint && attw --pack --ignore-rules=cjs-resolves-to-esm --ignore-rules=no-resolution",
     "test": "vitest",
     "typecheck": "tsgo --noEmit"

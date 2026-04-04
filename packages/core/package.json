@@ -144,8 +144,8 @@
     "#types": "./src/astro/types.js"
   },
   "scripts": {
-    "build": "tsdown",
-    "dev": "tsdown --watch",
+    "build": "node api.js && tsdown",
+    "dev": "node api.js && tsdown --watch",
     "prepublishOnly": "node --run build",
     "typecheck": "tsgo --noEmit",
     "check": "publint && attw --pack --ignore-rules=cjs-resolves-to-esm --ignore-rules=no-resolution --ignore-rules=internal-resolution-error",
