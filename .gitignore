@@ -16,8 +16,6 @@ yarn-error.log*
 pnpm-debug.log*
 
 # environment variables
-.env
-.env.production
 .dev.vars
 
 # database files
@@ -66,3 +64,4 @@ __screenshots__/
 
 # Downloaded test data (fetched on demand in CI)
 examples/wp-theme-unit-test/
+config.bat
